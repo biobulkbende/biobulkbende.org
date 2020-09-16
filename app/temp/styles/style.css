@@ -312,4 +312,98 @@ img {
   max-width: 100%;
   height: auto; }
 
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  transition: background-color .3s ease-out; }
+  @media (min-width: 800px) {
+    .site-header {
+      position: fixed;
+      background-color: #cdf691; } }
+  @media (min-width: 800px) {
+    .site-header__btn-container {
+      float: right; } }
+  .site-header__menu-content {
+    opacity: 0;
+    transform: scale(1.2);
+    transtion: all .3s ease-out;
+    position: relative;
+    z-index: -10;
+    padding-top: 90px;
+    text-align: center; }
+    @media (min-width: 800px) {
+      .site-header__menu-content {
+        opacity: 1;
+        z-index: 1;
+        padding-top: 0;
+        transform: scale(1); } }
+  .site-header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: 50% 0%;
+    transform: translateX(-50%) scale(0.8);
+    transition: transform .3s ease-out; }
+    @media (min-width: 800px) {
+      .site-header__logo {
+        left: auto;
+        transform: translateX(0); } }
+
+.primary-nav {
+  padding-top: 10px; }
+  @media (min-width: 800px) {
+    .primary-nav {
+      padding-top: 0; } }
+  @media (min-width: 800px) {
+    .primary-nav--pull-right {
+      float: right; } }
+  .primary-nav ul {
+    margin: 0;
+    padding: 0; }
+    .primary-nav ul::after {
+      content: "";
+      clear: both;
+      display: table; }
+  .primary-nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 7px; }
+    @media (min-width: 800px) {
+      .primary-nav li {
+        float: left;
+        display: block;
+        padding-right: 20px; } }
+  .primary-nav li:last-child {
+    padding-right: 0; }
+    @media (min-width: 800px) {
+      .primary-nav li:last-child {
+        padding-right: 20px; } }
+  .primary-nav a {
+    color: #000;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 5px 8px;
+    font-size: .8rem;
+    background: rgba(0, 0, 255, 0.5); }
+    @media (min-width: 800px) {
+      .primary-nav a {
+        background: transparent;
+        font-size: 1rem;
+        padding: 12px 0; }
+        .primary-nav a.is-current-link {
+          color: #fabb69; } }
+
+.wrapper {
+  overflow: hidden;
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper--medium {
+    max-width: 976px; }
+
 /*# sourceMappingURL=style.css.map */

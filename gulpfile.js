@@ -58,7 +58,7 @@ const watch = function() {
     		baseDir: './app'
     	}
     });
-    gulp.watch("./app/assets/scss/**/*.scss", {usePolling : true}, gulp.series(scssTask));
+    gulp.watch("./app/assets/scss/**/*.scss", {usePolling : true}, gulp.series(scssTask)).on('change', browserSync.reload);
     gulp.watch("./app/assets/js/**/*.js").on('change', browserSync.reload);
     // gulp.watch("./app/assets/images", {usePolling : true}, gulp.series(imagesTask));
     gulp.watch("./app/*.html").on('change', browserSync.reload);

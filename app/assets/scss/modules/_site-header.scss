@@ -1,0 +1,50 @@
+.site-header{
+	padding: 10px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	transition: background-color .3s ease-out;
+	
+	@include atMedium(){
+		position: fixed;
+		background-color: #cdf691;
+	}
+
+	&__btn-container{
+		@include atMedium(){
+			float: right;
+		}
+	}
+
+	&__menu-content{
+		opacity: 0;
+		transform: scale(1.2);
+		transtion: all .3s ease-out;
+		position: relative;
+		z-index: -10;
+		padding-top: 90px;
+		text-align: center;
+
+		@include atMedium(){
+			opacity: 1;
+			z-index: 1;
+			padding-top: 0;
+			transform: scale(1); 
+		}
+	}
+
+	&__logo{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform-origin: 50% 0%;
+		transform: translateX(-50%) scale(.8);
+		transition: transform .3s ease-out;
+
+		@include atMedium(){
+			left: auto;
+			transform: translateX(0);
+		}
+	}
+
+}

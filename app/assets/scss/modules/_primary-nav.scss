@@ -1,0 +1,61 @@
+.primary-nav{
+	padding-top: 10px;
+	
+	@include atMedium(){
+		padding-top: 0;
+	}
+
+	&--pull-right{
+		@include atMedium(){
+			float: right;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		@include clearfix();
+	}
+
+	li{
+		list-style: none;
+		display: inline-block;
+		padding-right: 7px;
+
+		@include atMedium(){
+			float: left;
+			display: block;
+			padding-right: 20px;
+
+		}
+	}
+
+	li:last-child {
+		padding-right: 0;
+
+		@include atMedium(){
+			padding-right: 20px;
+		}
+	}
+
+	a{
+		color:  #000;
+		font-weight: 300;
+		text-decoration: none;
+		display: block;
+		padding: 5px 8px;
+		font-size: .8rem;
+		background:rgba(blue, .5);
+
+		@include atMedium(){
+			background:transparent;
+			font-size: 1rem;
+			padding: 12px 0;
+
+			&.is-current-link {
+				color: #fabb69;
+			}
+		}
+	}
+}
