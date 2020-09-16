@@ -1,11 +1,14 @@
 ## TO START
 
-* install node.js globally
+* make sure you have installed git, node.js and npm
+* clone this repo
 
-* go in the folder and install all packages
+		$ git clone https://github.com/biobulkbende/biobulkbende.org
+	
+* from within the folder install all packages
 
         $ npm install
 
-* run gulp
+* run gulp for automation
 
         $ gulp watch
