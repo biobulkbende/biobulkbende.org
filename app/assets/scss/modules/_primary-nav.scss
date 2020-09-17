@@ -2,7 +2,7 @@
 	padding-top: 10px;
 	
 	@include atMedium(){
-		padding-top: 0;
+		padding: 31px 0px;
 	}
 
 	&--pull-right{
@@ -40,8 +40,8 @@
 	}
 
 	a{
-		color:  #000;
-		font-weight: 300;
+		color:  #fff;
+		font-weight: 400;
 		text-decoration: none;
 		display: block;
 		padding: 5px 8px;
@@ -50,7 +50,7 @@
 
 		@include atMedium(){
 			background:transparent;
-			font-size: 1rem;
+			font-size: 1.10rem;
 			padding: 12px 0;
 
 			&.is-current-link {

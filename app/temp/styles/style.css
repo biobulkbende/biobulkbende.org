@@ -304,6 +304,22 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: "CocogooseNormal";
+  src: url("../media/fonts/cocogoose/Cocogoose_medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "CocogooseLight";
+  src: url("../media/fonts/cocogoose/Cocogoose_light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "CocogooseBold";
+  src: url("../media/fonts/cocogoose/Cocogoose_bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "CocogooseExtra";
+  src: url("../media/fonts/cocogoose/Cocogoose_extraBold.ttf") format("truetype"); }
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #333; }
@@ -313,7 +329,6 @@ img {
   height: auto; }
 
 .site-header {
-  padding: 10px 0;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -321,7 +336,7 @@ img {
   @media (min-width: 800px) {
     .site-header {
       position: fixed;
-      background-color: #cdf691; } }
+      background-color: rgba(0, 0, 0, 0.4); } }
   @media (min-width: 800px) {
     .site-header__btn-container {
       float: right; } }
@@ -348,6 +363,8 @@ img {
     transition: transform .3s ease-out; }
     @media (min-width: 800px) {
       .site-header__logo {
+        position: relative;
+        float: left;
         left: auto;
         transform: translateX(0); } }
 
@@ -355,7 +372,7 @@ img {
   padding-top: 10px; }
   @media (min-width: 800px) {
     .primary-nav {
-      padding-top: 0; } }
+      padding: 31px 0px; } }
   @media (min-width: 800px) {
     .primary-nav--pull-right {
       float: right; } }
@@ -381,8 +398,8 @@ img {
       .primary-nav li:last-child {
         padding-right: 20px; } }
   .primary-nav a {
-    color: #000;
-    font-weight: 300;
+    color: #fff;
+    font-weight: 400;
     text-decoration: none;
     display: block;
     padding: 5px 8px;
@@ -391,7 +408,7 @@ img {
     @media (min-width: 800px) {
       .primary-nav a {
         background: transparent;
-        font-size: 1rem;
+        font-size: 1.10rem;
         padding: 12px 0; }
         .primary-nav a.is-current-link {
           color: #fabb69; } }
@@ -400,10 +417,54 @@ img {
   overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
-  max-width: 1236px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto; }
   .wrapper--medium {
     max-width: 976px; }
+
+.large-hero {
+  border-bottom: 10px solid white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative; }
+  .large-hero__image {
+    display: block; }
+  .large-hero__text-content {
+    padding-top: 88px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center; }
+    @media (min-width: 800px) {
+      .large-hero__text-content {
+        padding-top: 60px; } }
+  .large-hero__title {
+    font-family: "CocogooseBold";
+    color: white;
+    font-size: 2.4rem;
+    margin: 0; }
+    @media (min-width: 530px) {
+      .large-hero__title {
+        font-size: 4.8rem; } }
+  .large-hero__subtitle {
+    font-family: "CocogooseNormal";
+    color: white;
+    font-size: 1.5rem;
+    margin: 0; }
+    @media (min-width: 530px) {
+      .large-hero__subtitle {
+        font-size: 2.9rem; } }
+  .large-hero__description {
+    color: #FFF;
+    font-weight: 00;
+    font-size: 1.1rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 530px) {
+      .large-hero__description {
+        font-size: 1.875rem; } }
 
 /*# sourceMappingURL=style.css.map */
