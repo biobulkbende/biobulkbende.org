@@ -24,10 +24,14 @@
 	&__title {
 		font-family: "CocogooseBold";
 		color: white;
-		font-size: 2.4rem;
+		font-size: 2.8rem;
 		margin: 0;
 
 		@include atSmall(){
+			font-size: 3.2rem;
+		} 
+
+		@include atMedium(){
 			font-size: 4.8rem;
 		} 
 
@@ -41,8 +45,12 @@
 		margin: 0;
 
 		@include atSmall(){
-			font-size: 2.4rem;
+			font-size: 1.8rem;
 		}
+
+		@include atMedium(){
+			font-size: 2.4rem;
+		} 
 	}
 
 	&__description {
@@ -54,8 +62,12 @@
 		margin-right: auto;
 
 		@include atSmall(){
-			font-size: 1.875rem;
+			font-size: 1.3rem;
 		}
+
+		@include atMedium(){
+			font-size: 1.875rem;
+		} 
 	}
 
 

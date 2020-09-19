@@ -23,7 +23,7 @@
 			</div>
 
 			<div class="site-header__menu-icon">
-					<div class="site-header__menu-icon__middle"></div>
+				<div class="site-header__menu-icon__middle"></div>
 			</div>
 
 			<div class="site-header__menu-content">
@@ -31,14 +31,16 @@
 					<a href="#" class="btn ">Place your Order</a>
 				</div>
 
-				
+				<div class="site-header__language">
+					<a href="#"><img src="./assets/media/images/netherlands_flag.gif" alt="Netherlands flag"></a>
+				</div>
 
 				<nav class="primary-nav primary-nav--pull-right">
 					<ul>
 						<li><a href="#about-us">About us</a></li>
 						<li><a href="#how-it-works">How it works</a></li>
 						<li><a href="#agenda">Agenda</a></li>
-						<li><a href="#members-area">Members area</a></li>
+						<li><a href="#members-area">Members area</a>
 					</ul>
 				</nav>
 			</div>
@@ -48,11 +50,17 @@
 
 	<!-- STARTING SECTION -->
 	<div class="large-hero">
-		<img src="./assets/media/images/veg.png" alt="A cool hero image">
+
+		<picture>
+			<source srcset="./assets/media/images/veg_large.png 1920w" media="(min-width: 1380px)">
+			<source srcset="./assets/media/images/veg_medium.png 1380w" media="(min-width: 990px)">
+			<source srcset="./assets/media/images/veg_small.png 990w" media="(min-width: 640px)">
+			<img srcset="./assets/media/images/boxes_small.jpg 640w" alt="Our fresh vegetables" class="large-hero__image">
+		</picture>
 		
 		<div class="large-hero__text-content">
 			<h1 class="large-hero__title">bio bulke bende</h1>
-			<h2 class="large-hero__subtitle">The organic autonomous foodcoop of Rotterdam</h2>
+			<h2 class="large-hero__subtitle">The organic autonomous foodcoop <br> of Rotterdam</h2>
 			<p class="large-hero__description">Good quality, delicious food from local suppliers and farmers. Located in Almondestraat 157, <b>bio bulk bende</b> is the first food co-op in Rotterdam. </p>
 			<p><a href="#" class="btn btn--large">Join us!</a></p>
 		</div>

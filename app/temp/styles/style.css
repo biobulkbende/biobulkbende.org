@@ -329,7 +329,7 @@ img {
   height: auto; }
 
 .site-header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 2;
   transition: background-color .3s ease-out; }
@@ -338,12 +338,23 @@ img {
     padding-bottom: 18px; }
   @media (min-width: 800px) {
     .site-header {
+      position: absolute;
       position: fixed;
       background-color: rgba(0, 0, 0, 0.4); } }
   @media (min-width: 800px) {
     .site-header__btn-container {
       padding: 32px 0px 32px 0px;
       float: right; } }
+  .site-header__language {
+    margin: 13px auto 5px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 25px;
+    height: 25px; }
+    @media (min-width: 800px) {
+      .site-header__language {
+        margin: 40px 20px 0px 0px;
+        float: right; } }
   .site-header__menu-icon {
     width: 20px;
     height: 19px;
@@ -418,6 +429,7 @@ img {
     transition: transform .3s ease-out;
     background-color: rgba(0, 0, 0, 0.5); }
     .site-header__logo--orange-bg {
+      transition: background-color .3s ease-out;
       background-color: orange; }
     @media (min-width: 800px) {
       .site-header__logo {
@@ -465,7 +477,8 @@ img {
     display: block;
     padding: 5px 8px;
     font-size: .8rem;
-    background: rgba(0, 0, 255, 0.5); }
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 30px; }
     @media (min-width: 800px) {
       .primary-nav a {
         background: transparent;
@@ -504,9 +517,12 @@ img {
   .large-hero__title {
     font-family: "CocogooseBold";
     color: white;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     margin: 0; }
     @media (min-width: 530px) {
+      .large-hero__title {
+        font-size: 3.2rem; } }
+    @media (min-width: 800px) {
       .large-hero__title {
         font-size: 4.8rem; } }
   .large-hero__subtitle {
@@ -515,6 +531,9 @@ img {
     font-size: 1.5rem;
     margin: 0; }
     @media (min-width: 530px) {
+      .large-hero__subtitle {
+        font-size: 1.8rem; } }
+    @media (min-width: 800px) {
       .large-hero__subtitle {
         font-size: 2.4rem; } }
   .large-hero__description {
@@ -526,6 +545,9 @@ img {
     margin-right: auto; }
     @media (min-width: 530px) {
       .large-hero__description {
+        font-size: 1.3rem; } }
+    @media (min-width: 800px) {
+      .large-hero__description {
         font-size: 1.875rem; } }
 
 .btn {
@@ -533,7 +555,8 @@ img {
   color: #fff;
   text-decoration: none;
   padding: .75rem 1.2rem;
-  display: inline-block; }
+  display: inline-block;
+  border-radius: 30px; }
   .btn--large {
     padding: 1.1rem 1.9rem; }
     @media (min-width: 530px) {

@@ -1,5 +1,5 @@
 .site-header{
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	z-index: 2;
 	transition: background-color .3s ease-out;
@@ -10,6 +10,7 @@
 	}
 	
 	@include atMedium(){
+		position: absolute;
 		position: fixed;
 		background-color: rgba(#000, 0.4);
 	}
@@ -20,6 +21,20 @@
 			float: right;
 		}
 	}
+
+	&__language{
+		margin: 13px auto 5px auto;
+		border-radius: 15px;
+		overflow: hidden;
+		width: 25px;
+		height: 25px;
+
+		@include atMedium(){
+			margin: 40px 20px 0px 0px;
+			float: right;
+		}
+	}
+
 
 	&__menu-icon{
 		width: 20px;
@@ -85,9 +100,6 @@
 		}
 	}
 
-
-
-
 	&__menu-content{
 		opacity: 0;
 		transform: scale(1.2);
@@ -122,6 +134,7 @@
 		background-color: rgba(black, 0.5);
 
 		&--orange-bg {
+			transition: background-color .3s ease-out;
 			background-color: orange;
 		}
 

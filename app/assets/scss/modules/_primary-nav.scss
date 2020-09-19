@@ -46,7 +46,8 @@
 		display: block;
 		padding: 5px 8px;
 		font-size: .8rem;
-		background:rgba(blue, .5);
+		background:rgba(black, .5);
+		border-radius: 30px;
 
 		@include atMedium(){
 			background:transparent;
