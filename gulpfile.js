@@ -4,6 +4,10 @@ const autoprefixer = require('autoprefixer'),
 postcss = require('gulp-postcss'),
 sass = require('gulp-sass'),
 sourcemaps = require('gulp-sourcemaps'),
+del = require('del'),
+webpack = require('webpack-stream'),
+webpackConfig = require('./webpack.config.js'),
+modernizr = require('gulp-modernizr'),
 browserSync = require('browser-sync').create();
 
 
@@ -58,8 +62,8 @@ const watch = function() {
     		baseDir: './app'
     	}
     });
-    gulp.watch("./app/assets/scss/**/*.scss", {usePolling : true}, gulp.series(scssTask));
-    gulp.watch("./app/assets/js/**/*.js").on('change', browserSync.reload);
+    gulp.watch("./app/assets/scss/**/*.scss", {usePolling : true}, gulp.series(scssTask)).on('change', browserSync.reload);
+    gulp.watch("./app/assets/js/**/*.js", {usePolling : true}, gulp.series(cleanScripts, modernizrTask, scriptsTask, endCleanModernizr));
     // gulp.watch("./app/assets/images", {usePolling : true}, gulp.series(imagesTask));
     gulp.watch("./app/*.html").on('change', browserSync.reload);
 };
