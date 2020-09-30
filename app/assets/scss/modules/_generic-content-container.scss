@@ -1,0 +1,33 @@
+.generic-content-container{
+
+	&--t-b-margin{
+    	margin-top: 5rem;
+    	margin-bottom: 70px;
+
+    	@include atLarge{
+    		margin-top: 7rem;
+    		margin-bottom: 0px;
+    	}
+	}
+
+	&--t-center{
+		text-align: center;
+	}
+
+	p {
+		font-weight: 300;
+		line-height: 1.65;
+		margin: 0;
+		font-size: 1.2rem;
+
+		@include atMedium{
+			margin: 0 0 1.8rem 0;
+			font-size: 1.4rem;
+		}
+	}
+
+	p a {
+		font-weight: 700;
+	}
+
+}

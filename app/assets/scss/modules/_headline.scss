@@ -1,0 +1,54 @@
+.headline{
+	margin:auto;
+
+	&--s-width {
+		max-width: 500px;
+
+		@include atMedium(){
+			max-width: 1000px;
+		}
+
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 1.7rem;
+
+		@include atMedium(){
+			font-size: 2.1rem;
+		}
+	}
+
+	&__subtitle {
+		font-weight: 300;
+		font-size: 1.4rem;
+
+		@include atMedium(){
+			font-size: 1.8rem;
+		}
+	}
+	
+	&--centered {
+		text-align: center;
+	}
+
+	&--lightGreen {
+		color: $myLightGreen;
+	}
+
+	&--orange {
+		color: $myOrange;
+	}
+
+	&--b-margin {
+		margin-bottom: 2.5rem;
+
+		@include atMedium(){
+			margin-bottom: 4.5rem;
+		}
+	}
+
+	a {
+		font-weight: 400;
+	}
+}
