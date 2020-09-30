@@ -19,7 +19,7 @@
 	}
 
 	&--gutters > div {
-		padding-right: 65px;
+		padding-right: 60px;
 	}
 
 	&--gutters-large > div {
@@ -34,7 +34,7 @@
 		margin-bottom: 1rem;
 	}
 
-	@include atMedium(){
+	@include atLarge(){
 		
 		&__b-margin-until-medium{
 		margin-bottom: 0rem;
@@ -46,7 +46,7 @@
 		}
 
 		&__medium-4--larger{
-			width: 37%;
+			width: 27%;
 		}
 
 		&__medium-6 {
