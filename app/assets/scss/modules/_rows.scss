@@ -40,6 +40,11 @@
 		margin-bottom: 0rem;
 		}
 
+		&__medium-3--larger {
+			float: left;
+			width: 30%;
+		}
+
 		&__medium-4 {
 			float: left;
 			width: 33.33%;
@@ -61,6 +66,11 @@
 
 		&__medium-8--smaller{
 			width: 63%;
+		}
+
+		&__medium-9--smaller {
+			float: right;
+			width: 70%;
 		}
 
 	}

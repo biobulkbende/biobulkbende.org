@@ -567,6 +567,8 @@ img {
   margin-right: auto; }
   .wrapper--medium {
     max-width: 976px; }
+  .wrapper--t-margins {
+    margin-top: 100px; }
 
 .page-section {
   padding: 1.2rem 0;
@@ -599,16 +601,25 @@ img {
     bottom: -60px;
     left: 50%;
     transform: translateX(-50%); }
+    @media (min-width: 530px) {
+      .page-section--arrow-down {
+        position: relative;
+        top: -10px;
+        margin: auto;
+        left: 0;
+        transform: translateX(0%); } }
     @media (min-width: 800px) {
       .page-section--arrow-down {
         position: relative;
-        top: 70px;
+        top: 20px;
         margin: auto;
         left: 0;
         transform: translateX(0%); } }
 
 .headline {
   margin: auto; }
+  .headline--l-margin {
+    margin-left: 55px; }
   .headline--s-width {
     max-width: 500px; }
     @media (min-width: 800px) {
@@ -665,6 +676,9 @@ img {
   @media (min-width: 1200px) {
     .row__b-margin-until-medium {
       margin-bottom: 0rem; }
+    .row__medium-3--larger {
+      float: left;
+      width: 30%; }
     .row__medium-4 {
       float: left;
       width: 33.33%; }
@@ -677,7 +691,10 @@ img {
       float: right;
       width: 66.66%; }
     .row__medium-8--smaller {
-      width: 63%; } }
+      width: 63%; }
+    .row__medium-9--smaller {
+      float: right;
+      width: 70%; } }
   @media (min-width: 800px) {
     .flexbox .row--equal-height-at-medium {
       display: flex; } }
@@ -717,24 +734,33 @@ img {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
+  padding-bottom: 61.15%;
   height: 0;
   overflow: hidden;
   box-shadow: -3px 3px 10px #000000ba;
-  margin-bottom: 15px;
   margin-right: -18px;
   margin-left: -18px; }
+  @media (min-width: 530px) {
+    .video-container {
+      padding-bottom: 60%; } }
+  @media (min-width: 800px) {
+    .video-container {
+      padding-bottom: 59%; } }
   @media (min-width: 1200px) {
     .video-container {
+      padding-bottom: 56.25%;
       margin-right: 0px;
       margin-left: 0px; } }
 
-.video-container iframe, .video-container object, .video-container embed {
+.video-container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
+
+.icon--foodcoop {
+  width: 255px;
+  margin-left: 60px; }
 
 /*# sourceMappingURL=style.css.map */

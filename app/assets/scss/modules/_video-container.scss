@@ -1,21 +1,29 @@
 .video-container {
 	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
+	padding-bottom:61.15%;
 	height:0;
 	overflow:hidden;
 	box-shadow: -3px 3px 10px #000000ba;
-	margin-bottom: 15px;
 	margin-right: -18px;
 	margin-left: -18px;
 
+	@include atSmall{
+		padding-bottom:60%;
+	}
+
+	@include atMedium{
+		padding-bottom:59%;
+	}
+
+
 	@include atLarge{
-		margin-right: 0px;
+	padding-bottom:56.25%;
+	margin-right: 0px;
 	margin-left: 0px;
 	}
 }
 
-.video-container iframe, .video-container object, .video-container embed {
+.video-container video{
 	position:absolute;
 	top:0;
 	left:0;

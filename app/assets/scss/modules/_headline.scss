@@ -1,6 +1,10 @@
 .headline{
 	margin:auto;
 
+	&--l-margin{
+		margin-left: 55px;
+	}
+
 	&--s-width {
 		max-width: 500px;
 
