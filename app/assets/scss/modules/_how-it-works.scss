@@ -1,0 +1,62 @@
+.how-it-works{
+	margin: 50px 0px;
+
+
+	strong {
+		font-weight: 800;
+	}
+
+	&--centered{
+		position: absolute;
+		top: 50%;
+		left: 0px;
+		width: 100%;
+		transform: translateY(-50%);
+		text-align: center;
+	}
+
+	&--t-margin{
+		margin-top: -30px;
+	}
+
+	&__last-section{
+		padding: 100px 0px 50px 0px;
+		background-color: rgba(white,0.9);
+	}
+
+	p{
+		font-weight: 300;
+		line-height: 1.25;
+		margin: 0;
+		font-size: 1.2rem;
+
+		@include atMedium{
+			margin: 0 0 1.8rem 0;
+			font-size: 1.4rem;
+		}
+	}
+
+	&__title{
+		font-weight: 300;
+		font-size: 1.7rem;
+		margin-bottom: 45px;
+
+		@include atMedium(){
+			margin-top: 10px;
+			font-size: 2.1rem;
+		}
+		
+	}
+
+	&__icon--foodcoop{
+		width: 255px;
+		margin-left: 60px;
+	}
+
+	&__icon--foodcoop2{
+		width: 100px;
+		margin-right: .8rem;
+		margin-bottom: -20px;
+	}
+
+}

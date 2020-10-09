@@ -320,6 +320,9 @@ template {
   font-family: "CocogooseExtra";
   src: url("../media/fonts/cocogoose/Cocogoose_extraBold.ttf") format("truetype"); }
 
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #333; }
@@ -525,7 +528,7 @@ img {
   .large-hero__title {
     font-family: "CocogooseBold";
     color: white;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin: 0; }
     @media (min-width: 530px) {
       .large-hero__title {
@@ -536,7 +539,7 @@ img {
   .large-hero__subtitle {
     font-weight: 400;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 0; }
     @media (min-width: 530px) {
       .large-hero__subtitle {
@@ -567,16 +570,31 @@ img {
   margin-right: auto; }
   .wrapper--medium {
     max-width: 976px; }
+  .wrapper--small {
+    max-width: 750px; }
   .wrapper--t-margins {
     margin-top: 100px; }
 
 .page-section {
-  padding: 1.2rem 0;
   position: relative; }
-  @media (min-width: 800px) {
-    .page-section {
-      position: unset;
-      padding: 4.5rem 0; } }
+  .page-section--tb-padding {
+    padding: 1.2rem 0; }
+    @media (min-width: 800px) {
+      .page-section--tb-padding {
+        position: unset;
+        padding: 4.5rem 0; } }
+  .page-section--t-padding {
+    padding-top: 1.2rem; }
+    @media (min-width: 800px) {
+      .page-section--t-padding {
+        position: unset;
+        padding-top: 4.5rem; } }
+  .page-section--b-padding-small {
+    padding-bottom: 1rem; }
+    @media (min-width: 800px) {
+      .page-section--b-padding-small {
+        position: unset;
+        padding-top: 3.8rem; } }
   .page-section--b-margin {
     margin-bottom: 70px; }
     @media (min-width: 800px) {
@@ -618,15 +636,16 @@ img {
 
 .headline {
   margin: auto; }
-  .headline--l-margin {
-    margin-left: 55px; }
+  .headline--lt-margin {
+    margin-left: 55px;
+    margin-top: -18px; }
   .headline--s-width {
     max-width: 500px; }
     @media (min-width: 800px) {
       .headline--s-width {
         max-width: 1000px; } }
   .headline__title {
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.7rem; }
     @media (min-width: 800px) {
       .headline__title {
@@ -657,41 +676,23 @@ img {
     content: "";
     clear: both;
     display: table; }
-  .row--t-padding {
-    padding-top: 80px; }
   .row--gutters {
-    margin-right: -65px; }
-  .row--gutters-large {
-    margin-right: -100px; }
-  .row--gutters-small {
-    margin-right: -45px; }
+    margin-right: -60px; }
   .row--gutters > div {
     padding-right: 60px; }
-  .row--gutters-large > div {
-    padding-right: 100px; }
-  .row--gutters-small > div {
-    padding-right: 45px; }
-  .row__b-margin-until-medium {
-    margin-bottom: 1rem; }
   @media (min-width: 1200px) {
-    .row__b-margin-until-medium {
-      margin-bottom: 0rem; }
     .row__medium-3--larger {
       float: left;
       width: 30%; }
     .row__medium-4 {
       float: left;
       width: 33.33%; }
-    .row__medium-4--larger {
-      width: 27%; }
     .row__medium-6 {
       float: left;
       width: 50%; }
     .row__medium-8 {
       float: right;
       width: 66.66%; }
-    .row__medium-8--smaller {
-      width: 63%; }
     .row__medium-9--smaller {
       float: right;
       width: 70%; } }
@@ -713,7 +714,6 @@ img {
   margin-bottom: 70px; }
   @media (min-width: 1200px) {
     .generic-content-container--t-b-margin {
-      margin-top: 7rem;
       margin-bottom: 0px; } }
 
 .generic-content-container--t-center {
@@ -721,7 +721,7 @@ img {
 
 .generic-content-container p {
   font-weight: 300;
-  line-height: 1.65;
+  line-height: 1.25;
   margin: 0;
   font-size: 1.2rem; }
   @media (min-width: 800px) {
@@ -762,5 +762,52 @@ img {
 .icon--foodcoop {
   width: 255px;
   margin-left: 60px; }
+
+.icon--foodcoop2 {
+  float: left;
+  width: 100px;
+  margin-top: -33px;
+  margin-right: 20px; }
+
+.how-it-works {
+  margin: 50px 0px; }
+  .how-it-works strong {
+    font-weight: 800; }
+  .how-it-works--centered {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center; }
+  .how-it-works--t-margin {
+    margin-top: -30px; }
+  .how-it-works__last-section {
+    padding: 100px 0px 50px 0px;
+    background-color: rgba(255, 255, 255, 0.9); }
+  .how-it-works p {
+    font-weight: 300;
+    line-height: 1.25;
+    margin: 0;
+    font-size: 1.2rem; }
+    @media (min-width: 800px) {
+      .how-it-works p {
+        margin: 0 0 1.8rem 0;
+        font-size: 1.4rem; } }
+  .how-it-works__title {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-bottom: 45px; }
+    @media (min-width: 800px) {
+      .how-it-works__title {
+        margin-top: 10px;
+        font-size: 2.1rem; } }
+  .how-it-works__icon--foodcoop {
+    width: 255px;
+    margin-left: 60px; }
+  .how-it-works__icon--foodcoop2 {
+    width: 100px;
+    margin-right: .8rem;
+    margin-bottom: -20px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,6 @@
     	margin-bottom: 70px;
 
     	@include atLarge{
-    		margin-top: 7rem;
     		margin-bottom: 0px;
     	}
 	}
@@ -16,7 +15,7 @@
 
 	p {
 		font-weight: 300;
-		line-height: 1.65;
+		line-height: 1.25;
 		margin: 0;
 		font-size: 1.2rem;
 

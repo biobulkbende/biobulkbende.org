@@ -1,44 +1,16 @@
 .row{
-	
+
 	@include clearfix();
 
-	&--t-padding{
-		padding-top: 80px;
-	}
-
 	&--gutters {
-		margin-right: -65px;
-	}
-
-	&--gutters-large {
-		margin-right: -100px;
-	}
-
-	&--gutters-small {
-		margin-right: -45px;
+		margin-right: -60px;
 	}
 
 	&--gutters > div {
 		padding-right: 60px;
 	}
 
-	&--gutters-large > div {
-		padding-right: 100px;
-	}
-
-	&--gutters-small > div {
-		padding-right: 45px;
-	}
-
-	&__b-margin-until-medium{
-		margin-bottom: 1rem;
-	}
-
 	@include atLarge(){
-		
-		&__b-margin-until-medium{
-		margin-bottom: 0rem;
-		}
 
 		&__medium-3--larger {
 			float: left;
@@ -50,10 +22,6 @@
 			width: 33.33%;
 		}
 
-		&__medium-4--larger{
-			width: 27%;
-		}
-
 		&__medium-6 {
 			float: left;
 			width: 50%;
@@ -62,10 +30,6 @@
 		&__medium-8 {
 			float: right;
 			width: 66.66%;
-		}
-
-		&__medium-8--smaller{
-			width: 63%;
 		}
 
 		&__medium-9--smaller {
