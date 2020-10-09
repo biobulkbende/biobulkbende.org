@@ -320,11 +320,23 @@ template {
   font-family: "CocogooseExtra";
   src: url("../media/fonts/cocogoose/Cocogoose_extraBold.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "BS-regular";
+  src: url("../media/fonts/bahnschrift/BS_Static_Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BS-light";
+  src: url("../media/fonts/bahnschrift/BS_Static_Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BS-bold";
+  src: url("../media/fonts/bahnschrift/BS_Static_Bold.ttf") format("truetype"); }
+
 * {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'roboto', sans-serif;
   color: #333; }
 
 img {
@@ -636,16 +648,18 @@ img {
 
 .headline {
   margin: auto; }
+  .headline strong {
+    font-weight: 800; }
   .headline--lt-margin {
     margin-left: 55px;
-    margin-top: -18px; }
+    margin-top: -5px; }
   .headline--s-width {
     max-width: 500px; }
     @media (min-width: 800px) {
       .headline--s-width {
         max-width: 1000px; } }
   .headline__title {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.7rem; }
     @media (min-width: 800px) {
       .headline__title {
@@ -655,7 +669,7 @@ img {
     font-size: 1.4rem; }
     @media (min-width: 800px) {
       .headline__subtitle {
-        font-size: 1.8rem; } }
+        font-size: 1.6rem; } }
   .headline--centered {
     text-align: center; }
   .headline--lightGreen {
@@ -759,16 +773,6 @@ img {
   width: 100%;
   height: 100%; }
 
-.icon--foodcoop {
-  width: 255px;
-  margin-left: 60px; }
-
-.icon--foodcoop2 {
-  float: left;
-  width: 100px;
-  margin-top: -33px;
-  margin-right: 20px; }
-
 .how-it-works {
   margin: 50px 0px; }
   .how-it-works strong {
@@ -802,12 +806,20 @@ img {
       .how-it-works__title {
         margin-top: 10px;
         font-size: 2.1rem; } }
-  .how-it-works__icon--foodcoop {
-    width: 255px;
+  .how-it-works__icon--1 {
+    width: 225px;
     margin-left: 60px; }
-  .how-it-works__icon--foodcoop2 {
-    width: 100px;
+  .how-it-works__icon--2 {
+    width: 130px;
     margin-right: .8rem;
-    margin-bottom: -20px; }
+    margin-bottom: -45px; }
+  .how-it-works__icon--3 {
+    width: 130px;
+    margin-right: .8rem;
+    margin-bottom: -35px; }
+  .how-it-works__icon--4 {
+    width: 100px;
+    margin-bottom: -30px;
+    margin-right: 20px; }
 
 /*# sourceMappingURL=style.css.map */

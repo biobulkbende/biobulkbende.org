@@ -1,7 +1,6 @@
 .how-it-works{
 	margin: 50px 0px;
 
-
 	strong {
 		font-weight: 800;
 	}
@@ -48,15 +47,27 @@
 		
 	}
 
-	&__icon--foodcoop{
-		width: 255px;
+	&__icon--1{
+		width: 225px;
 		margin-left: 60px;
 	}
 
-	&__icon--foodcoop2{
-		width: 100px;
+	&__icon--2{
+		width: 130px;
 		margin-right: .8rem;
-		margin-bottom: -20px;
+		margin-bottom: -45px;
 	}
 
+	&__icon--3{
+		width: 130px;
+		margin-right: .8rem;
+		margin-bottom: -35px;
+	}
+
+
+	&__icon--4{
+		width: 100px;
+		margin-bottom: -30px;
+		margin-right: 20px;
+	}
 }

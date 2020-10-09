@@ -1,9 +1,13 @@
 .headline{
 	margin:auto;
 
+	strong {
+		font-weight: 800;
+	}
+
 	&--lt-margin{
 		margin-left: 55px;
-		margin-top: -18px;
+		margin-top: -5px;
 	}
 
 	&--s-width {
@@ -16,7 +20,7 @@
 	}
 
 	&__title {
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 1.7rem;
 
 		@include atMedium(){
@@ -29,7 +33,7 @@
 		font-size: 1.4rem;
 
 		@include atMedium(){
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 		}
 	}
 	
