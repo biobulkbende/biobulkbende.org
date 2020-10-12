@@ -10,11 +10,16 @@
 		max-width: 976px;
 	}
 
+	&--centered{
+		text-align: center;
+
+		@include atLarge{
+			text-align: left;
+		}
+	}
+
 	&--small{
 		max-width: 750px;
 	}
 
-	&--t-margins{
-		margin-top: 100px;
-	}
 }

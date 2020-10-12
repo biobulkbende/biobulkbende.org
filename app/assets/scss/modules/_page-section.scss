@@ -1,6 +1,17 @@
 .page-section{
 	position: relative;
 
+	&--t-margin-external{
+		margin-top: -70px;
+	}
+
+	&--b-margin-external{
+
+		@include atMedium(){
+			margin-bottom: -140px;
+		}
+	}
+
 	&--tb-padding{
 		padding: 1.2rem 0;
 
@@ -51,37 +62,6 @@
 		background-color: $myLightGreen;
 		color: #fff;
 	}
-
-	&--arrow-down{
-		width: 0; 
-		height: 0; 
-		border-left: 70px solid transparent;
-		border-right: 70px solid transparent;
-		border-top: 85px solid $myRed;
-		position: absolute;
-		bottom: -60px;
-		left: 50%;
-		transform: translateX(-50%);
-
-		@include atSmall{
-			position: relative;
-			top: -10px;
-			margin: auto;
-			left: 0;
-			transform: translateX(0%);
-		}
-
-		@include atMedium{
-			position: relative;
-			top: 20px;
-			margin: auto;
-			left: 0;
-			transform: translateX(0%);
-		}
-	}
-
-
-
 
 	// &--testimonials{
 	// 	background: #e0e6ef;

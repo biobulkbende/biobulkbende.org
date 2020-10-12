@@ -6,8 +6,11 @@
 	}
 
 	&--lt-margin{
-		margin-left: 55px;
 		margin-top: -5px;
+
+		@include atLarge{
+			margin-left: 55px;
+		}
 	}
 
 	&--s-width {

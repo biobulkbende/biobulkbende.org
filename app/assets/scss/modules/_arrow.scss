@@ -1,0 +1,85 @@
+.arrow{
+	width: 0; 
+	height: 0; 
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+
+	&--about{	
+		position: absolute;
+		bottom: -60px;
+		z-index: 1;
+		left: 50%;
+		transform:translateX(-50%);
+
+		@include atMedium{
+			position: relative;
+			bottom: -70px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		@include atLarge{
+			position: relative;
+			bottom: -70px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&--how-it-works-1{
+		position: absolute;
+		bottom: -60px;
+		z-index: 1;
+		left: 50%;
+		transform:translateX(-50%);
+
+		@include atMedium{
+			position: relative;
+			bottom: -50px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		@include atLarge{
+			position: relative;
+			bottom: -50px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&--how-it-works-2{
+		position: absolute;
+		bottom: -60px;
+		z-index: 1;
+		left: 50%;
+		transform:translateX(-50%);
+
+		@include atMedium{
+			position: relative;
+			bottom: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		@include atLarge{
+			position: relative;
+			bottom: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&--red{
+		border-top: 85px solid $myRed;
+	}
+
+	&--darkGreen{
+		border-top: 85px solid $myDarkGreen;
+	}
+
+	&--lightGreen{
+		border-top: 85px solid $myLightGreen;
+	}
+
+}
