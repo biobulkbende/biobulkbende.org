@@ -2,6 +2,14 @@
 
 	@include clearfix();
 
+	&--large-only{
+		display: none;
+
+		@include atLarge{
+			display: inline-block;
+		}
+	}
+
 	&--gutters {
 		margin-right: -60px;
 	}

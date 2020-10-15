@@ -1,4 +1,4 @@
-@import './base/_normalize';
+@import './base/normalize';
 @import './base/variables';
 @import './base/fonts';
 @import './base/global';
@@ -8,12 +8,12 @@
 @import './modules/btn';
 @import './modules/large-hero';
 @import './modules/wrapper';
-@import './modules/_page-section';
-@import './modules/_headline';
-@import './modules/_rows';
-@import './modules/_generic-content-container';
-@import './modules/_video-container';
-@import './modules/_how-it-works.scss';
-@import './modules/_arrow.scss';
-
+@import './modules/page-section';
+@import './modules/headline';
+@import './modules/rows';
+@import './modules/generic-content-container';
+@import './modules/video-container';
+@import './modules/how-it-works';
+@import './modules/arrow';
+@import './modules/footer';
 

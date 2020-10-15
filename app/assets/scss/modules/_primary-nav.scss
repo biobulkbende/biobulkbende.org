@@ -2,7 +2,7 @@
 	padding-top: 10px;
 	
 	@include atMedium(){
-		padding: 31px 0px;
+		padding: 22px 0px;
 	}
 
 	&--pull-right{
@@ -22,6 +22,7 @@
 		list-style: none;
 		display: inline-block;
 		padding-right: 7px;
+		padding-top: 10px;
 
 		@include atMedium(){
 			float: left;

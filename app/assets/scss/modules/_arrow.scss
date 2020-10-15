@@ -13,7 +13,7 @@
 
 		@include atMedium{
 			position: relative;
-			bottom: -70px;
+			bottom: -40px;
 			left: 50%;
 			transform: translateX(-50%);
 		}
@@ -35,15 +35,15 @@
 
 		@include atMedium{
 			position: relative;
-			bottom: -50px;
+			bottom: -30px;
 			left: 50%;
 			transform: translateX(-50%);
 		}
 
 		@include atLarge{
 			position: relative;
-			bottom: -50px;
-			left: 50%;
+			bottom: -30px;
+			left: 70%;
 			transform: translateX(-50%);
 		}
 	}

@@ -23,18 +23,20 @@
 	}
 
 	&__language{
-		margin: 13px auto 5px auto;
+		position: absolute;
+		top: 10px;
+		left: -5px;
 		border-radius: 15px;
 		overflow: hidden;
 		width: 25px;
 		height: 25px;
 
 		@include atMedium(){
+			position: unset;
 			margin: 40px 20px 0px 0px;
 			float: right;
 		}
 	}
-
 
 	&__menu-icon{
 		width: 20px;
@@ -108,14 +110,17 @@
 		z-index: -10;
 		padding-top: 90px;
 		text-align: center;
+		display: none;
 
 		&--is-visible{
+			display: block;
 			transform: scale(1);
 			opacity: 1;
 			z-index: 1;
 		}
 
 		@include atMedium(){
+			display: inline;
 			opacity: 1;
 			z-index: 1;
 			padding-top: 0;
@@ -125,7 +130,7 @@
 
 	&__logo{
 		position: absolute;
-		top: 0px;
+		top: -1px;
 		padding: 5px 15px;
 		left: 50%;
 		transform-origin: 50% 0%;

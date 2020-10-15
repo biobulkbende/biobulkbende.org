@@ -1,5 +1,5 @@
 .how-it-works{
-	margin: 50px 0px;
+	margin-bottom: 2.5rem;
 
 	strong {
 		font-weight: 800;
@@ -14,10 +14,10 @@
 	}
 
 	&--atSmall-t-margin{
-		margin-top: 70px !important;
+		margin-top: 6rem !important;
 
-		@include atSmall{
-			margin-top: 20px;
+		@include atMedium{
+			margin-top: 4rem !important;
 		}
 
 		@include atLarge{
@@ -44,8 +44,12 @@
 	}
 
 	&__last-section{
-		padding: 100px 0px 50px 0px;
+		padding: 3rem 0px 50px 0px;
 		background-color: rgba(white,0.9);
+
+		@include atLarge{
+			padding: 100px 0px 50px 0px;
+		}
 	}
 
 	p{
@@ -72,11 +76,32 @@
 		
 	}
 
-	&__img{
-		display: none;
+	&__title-small{
+		font-weight: 300;
+		font-size: 1.4rem;
+		margin-bottom: 45px;
 
-		@include atLarge{
+		@include atMedium(){
+			margin-top: 10px;
+			font-size: 2.1rem;
+		}
+		
+	}
+
+	&__img{
+		// display: none;
+
+		// @include atLarge{
+		// 	display: inline-block;
+		// }
+
+		&--small-only{
 			display: inline-block;
+			margin: 10px 0px;
+
+			@include atLarge{
+				display: none;
+			}
 		}
 	}
 
@@ -94,15 +119,24 @@
 	}
 
 	&__icon--2{
-		width: 130px;
+		width: 100px;
 		margin-right: .8rem;
-		margin-bottom: -45px;
+		margin-bottom: -35px;
 	}
 
 	&__icon--3{
-		width: 130px;
+		width: 100px;
 		margin-right: .8rem;
-		margin-bottom: -35px;
+		margin-bottom: -30px;
+		margin-top: 1.2rem;
+
+		@include atMedium{
+			margin-top: 3.2rem;
+		}
+
+		@include atLarge{
+			margin-top: 0rem;
+		}
 	}
 
 
