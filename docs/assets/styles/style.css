@@ -968,7 +968,7 @@ img {
  Instead edit gulp/template/sprite*/
 .icon {
   display: inline-block;
-  background-image: url("./assets/media/images/sprites/sprite-c8960cf9.svg"); }
+  background-image: url("../media/images/sprites/sprite-c8960cf9.svg"); }
 
 .no-svg {
   background-image: url("../../temp/media/images/sprites/"); }
