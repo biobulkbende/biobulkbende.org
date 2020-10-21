@@ -12,7 +12,6 @@ svgSprite = require('gulp-svg-sprite'),
 rename = require('gulp-rename'),
 browserSync = require('browser-sync').create();
 
-
 // JS TASKS
 function cleanScripts(){
 	return del('./app/temp/scripts/App.js');

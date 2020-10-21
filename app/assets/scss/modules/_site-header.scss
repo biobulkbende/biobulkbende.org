@@ -12,13 +12,22 @@
 	@include atMedium(){
 		position: absolute;
 		position: fixed;
-		background-color: rgba(#000, 0.4);
+		background-color: rgba(#000, .4);
+
+		&--dark {
+			background-color: rgba(#000, .7);
+		}
 	}
 
 	&__btn-container{
 		@include atMedium(){
 			padding: 32px 0px 32px 0px;
 			float: right;
+			transition: padding .3s ease-out;
+
+			&--small{
+				padding: 13px 0px 13px 0px;
+			}
 		}
 	}
 
@@ -35,6 +44,11 @@
 			position: unset;
 			margin: 40px 20px 0px 0px;
 			float: right;
+			transition: margin .3s ease-out;
+
+			&--small{
+				margin: 22px 20px 0px 0px;
+			}
 		}
 	}
 
@@ -135,15 +149,22 @@
 		left: 50%;
 		transform-origin: 50% 0%;
 		transform: translateX(-50%) scale(.8);
-		transition: transform .3s ease-out;
+		transition: all .3s ease-out;
 		background-color: rgba(black, 0.5);
 
+		&--small {
+			transform: translateX(-50%) scale(.5);
+			background-color: rgba(black, 0.7);
+		}
+
 		&--orange-bg {
-			transition: background-color .3s ease-out;
-			background-color: orange;
+			transition: all .3s ease-out;
+			background-color: $myOrange;
+			transform: translateX(-50%) scale(.8);
 		}
 
 		@include atMedium(){
+			width: 170px;
 			padding: 0;
 			top: 3px;
 			position: relative;
@@ -151,6 +172,11 @@
 			left: auto;
 			transform: translateX(0);
 			background-color: rgba(black, 0);
+			transition: width .3s ease-out;
+
+			&--small {
+				width: 100px;
+			}
 		}
 	}
 

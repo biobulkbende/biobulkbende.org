@@ -3,6 +3,11 @@
 	
 	@include atMedium(){
 		padding: 22px 0px;
+		transition: padding .3s ease-out;
+
+		&--small{
+			padding: 2px 0px;
+		}
 	}
 
 	&--pull-right{
