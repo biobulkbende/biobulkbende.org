@@ -854,23 +854,20 @@ img {
       .how-it-works__icon--1 {
         width: 225px;
         margin-left: 80px; } }
-  .how-it-works__icon--2 {
-    width: 100px;
+  .how-it-works__icon--membership {
     margin-right: .8rem;
     margin-bottom: -35px; }
-  .how-it-works__icon--3 {
-    width: 100px;
+  .how-it-works__icon--workgroup-order {
     margin-right: .8rem;
     margin-bottom: -30px;
     margin-top: 1.2rem; }
     @media (min-width: 800px) {
-      .how-it-works__icon--3 {
+      .how-it-works__icon--workgroup-order {
         margin-top: 3.2rem; } }
     @media (min-width: 1200px) {
-      .how-it-works__icon--3 {
+      .how-it-works__icon--workgroup-order {
         margin-top: 0rem; } }
-  .how-it-works__icon--4 {
-    width: 100px;
+  .how-it-works__icon--pickup {
     margin-bottom: -30px;
     margin-right: 20px; }
 
@@ -947,5 +944,39 @@ img {
   background-color: #FF3D04;
   color: white;
   text-align: center; }
+
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp 
+ Instead edit gulp/template/sprite*/
+.icon {
+  display: inline-block;
+  background-image: url("/assets/media/images/sprites/sprite-c8960cf9.svg"); }
+
+.no-svg {
+  background-image: url("../../temp/media/images/sprites/"); }
+
+.icon--logo_white {
+  width: 167px;
+  height: 100px;
+  background-position: 0 0; }
+
+.icon--membership {
+  width: 100px;
+  height: 77px;
+  background-position: 62.546816479400746% 0; }
+
+.icon--order {
+  width: 100px;
+  height: 77px;
+  background-position: 0 100%; }
+
+.icon--pickup {
+  width: 100px;
+  height: 93px;
+  background-position: 100% 0; }
+
+.icon--workgroup {
+  width: 100px;
+  height: 77px;
+  background-position: 100% 93%; }
 
 /*# sourceMappingURL=style.css.map */

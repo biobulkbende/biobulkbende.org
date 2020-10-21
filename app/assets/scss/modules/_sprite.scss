@@ -1,0 +1,42 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp 
+ Instead edit gulp/template/sprite*/
+
+	.icon {
+		display: inline-block;
+		background-image: url('/assets/media/images/sprites/sprite-c8960cf9.svg');
+	}
+
+	.no-svg {
+		background-image: url('../../temp/media/images/sprites/');
+	}
+
+
+	.icon--logo_white {
+		width: 167px ;
+		height: 100px ;
+		background-position: 0 0;
+	}
+
+	.icon--membership {
+		width: 100px ;
+		height: 77px ;
+		background-position: 62.546816479400746% 0;
+	}
+
+	.icon--order {
+		width: 100px ;
+		height: 77px ;
+		background-position: 0 100%;
+	}
+
+	.icon--pickup {
+		width: 100px ;
+		height: 93px ;
+		background-position: 100% 0;
+	}
+
+	.icon--workgroup {
+		width: 100px ;
+		height: 77px ;
+		background-position: 100% 93%;
+	}
