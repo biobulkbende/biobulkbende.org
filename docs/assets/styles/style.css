@@ -655,13 +655,13 @@ img {
       .page-section--b-margin {
         margin-bottom: -140px; } }
   .page-section--red {
-    background-color: #FF3D04;
+    background-color: #d23b2d;
     color: #fff; }
   .page-section--darkGreen {
-    background-color: #6F9C3D;
+    background-color: #64802e;
     color: #fff; }
   .page-section--lightGreen {
-    background-color: #A5C90F;
+    background-color: #8db52b;
     color: #fff; }
 
 .headline {
@@ -693,7 +693,7 @@ img {
   .headline--centered {
     text-align: center; }
   .headline--lightGreen {
-    color: #A5C90F; }
+    color: #8db52b; }
   .headline--orange {
     color: #FF9F2F; }
   .headline--b-margin {
@@ -950,17 +950,17 @@ img {
         left: 50%;
         transform: translateX(-50%); } }
   .arrow--red {
-    border-top: 85px solid #FF3D04; }
+    border-top: 85px solid #d23b2d; }
   .arrow--darkGreen {
-    border-top: 85px solid #6F9C3D; }
+    border-top: 85px solid #64802e; }
   .arrow--lightGreen {
-    border-top: 85px solid #A5C90F; }
+    border-top: 85px solid #8db52b; }
 
 .footer {
   position: absolute;
   bottom: -40px;
   width: 100%;
-  background-color: #FF3D04;
+  background-color: #d23b2d;
   color: white;
   text-align: center; }
 
@@ -968,7 +968,7 @@ img {
  Instead edit gulp/template/sprite*/
 .icon {
   display: inline-block;
-  background-image: url("../media/images/sprites/sprite-c8960cf9.svg"); }
+  background-image: url("/assets/media/images/sprites/sprite-c8960cf9.svg"); }
 
 .no-svg {
   background-image: url("../../temp/media/images/sprites/"); }
