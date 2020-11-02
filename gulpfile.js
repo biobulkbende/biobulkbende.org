@@ -10,6 +10,7 @@ webpackConfig = require('./webpack.config.js'),
 modernizr = require('gulp-modernizr'),
 svgSprite = require('gulp-svg-sprite'),
 rename = require('gulp-rename'),
+imagemin = require('gulp-imagemin'),
 browserSync = require('browser-sync').create();
 
 // JS TASKS
@@ -105,5 +106,17 @@ const watch = function() {
     gulp.watch("./app/*.html").on('change', browserSync.reload);
 };
 
+// IMAGE TASK
+function imagesTask(){
+	return src(['./app/assets/media/images/**/*','./app/temp/media/images/**/*', '!./app/assets/media/images/icons', '!./app/assets/media/images/icons/**/*'])
+		.pipe(imagemin({
+			progressive: true,
+			interlaced: true,
+			multipass: true
+		}))
+		.pipe(dest('./docs/assets/media/images'));
+}
+
 exports.watch = watch;
 exports.icons = series(beginClean, createSprite, copySpriteGraphic, copySpriteCSS, endClean);
+exports.images = imagesTask;

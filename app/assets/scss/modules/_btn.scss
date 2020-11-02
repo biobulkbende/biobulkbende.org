@@ -12,6 +12,7 @@
 
 	&--medium {
 		margin-bottom:1.5rem;
+		margin-top: 1.5rem;
 
 		@include atSmall(){
 			font-size: 1.1rem;
@@ -23,6 +24,14 @@
 
 		@include atSmall(){
 			font-size: 1.25rem;
+		}
+	}
+
+	&--pickupday {
+		margin: 30px 0px;
+
+		@include atMedium(){
+			margin: 0px;
 		}
 	}
 } 
