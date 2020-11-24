@@ -1,14 +1,12 @@
-## TO START
+# biobulkbende.org
 
-* make sure you have installed git, node.js and npm
-* clone this repo
+> https://biobulkbende.org
 
-		$ git clone https://github.com/biobulkbende/biobulkbende.org
-	
-* from within the folder install all packages
+Our public website made by members!
 
-        $ npm install
+## Hacking
 
-* run gulp for automation
-
-        $ gulp watch
+- Make sure you have installed git, node.js and npm
+- Clone this repo: `git clone https://github.com/biobulkbende/biobulkbende.org`
+- From within the folder install all packages: `npm install`
+- Run gulp for automation: `gulp watch`
