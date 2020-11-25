@@ -1,5 +1,7 @@
 # biobulkbende.org
 
+[![Build Status](https://drone.autonomic.zone/api/badges/biobulkbende/biobulkbende.org/status.svg?ref=refs/heads/main)](https://drone.autonomic.zone/biobulkbende/biobulkbende.org)
+
 > https://biobulkbende.org
 
 Our public website made by members!
