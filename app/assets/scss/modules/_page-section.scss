@@ -1,86 +1,84 @@
-.page-section{
-	position: relative;
+.page-section {
+  position: relative;
 
-	&--t-margin-external{
-		margin-top: -70px;
-	}
+  &--t-margin-external {
+    margin-top: -70px;
+  }
 
-	&--b-margin-external{
+  &--b-margin-external {
+    @include atMedium() {
+      margin-bottom: -140px;
+    }
+  }
 
-		@include atMedium(){
-			margin-bottom: -140px;
-		}
-	}
+  &--tb-padding {
+    padding: 1.2rem 0;
 
-	&--tb-padding{
-		padding: 1.2rem 0;
+    @include atMedium() {
+      position: unset;
+      padding: 4.5rem 0;
+    }
+  }
 
-		@include atMedium(){
-			position: unset;
-			padding: 4.5rem 0;
-		}
-	} 
+  &--t-padding {
+    padding-top: 5.2rem;
 
-	&--t-padding{
-		padding-top: 5.2rem;
+    @include atMedium() {
+      position: unset;
+      padding-top: 4.5rem;
+    }
 
-		@include atMedium(){
-			position: unset;
-			padding-top: 4.5rem;
-		}
+    &-larger {
+      padding-top: 5.2rem;
 
-		&-larger{
-			padding-top: 5.2rem;
+      @include atMedium() {
+        position: unset;
+        padding-top: 6rem;
+      }
+    }
+  }
 
-			@include atMedium(){
-			position: unset;
-			padding-top: 6rem;
-			}
-		}
-	}
+  &--b-padding-small {
+    padding-bottom: 1rem;
 
-	&--b-padding-small{
-		padding-bottom: 1rem;
+    @include atMedium() {
+      position: unset;
+      padding-top: 3.8rem;
+    }
+  }
 
-		@include atMedium(){
-			position: unset;
-			padding-top: 3.8rem;
-		}
-	}
+  &--b-margin {
+    margin-bottom: 70px;
 
+    @include atMedium {
+      margin-bottom: -155px;
+    }
+  }
 
-	&--b-margin{
-		margin-bottom: 70px;
+  &--red {
+    background-color: $myRed;
+    color: #fff;
+  }
 
-		@include atMedium{
-			margin-bottom: -140px;
-		}
-	}
+  &--darkGreen {
+    background-color: $myDarkGreen;
+    color: #fff;
+  }
 
-	&--red{
-		background-color: $myRed;
-		color: #fff;
-	}
+  &--lightGreen {
+    background-color: $myLightGreen;
+    color: #fff;
+  }
 
-	&--darkGreen{
-		background-color: $myDarkGreen;
-		color: #fff;
-	}
+  // &--testimonials{
+  // 	background: #e0e6ef;
 
-	&--lightGreen{
-		background-color: $myLightGreen;
-		color: #fff;
-	}
+  // 	// @include atMedium(){
 
-	// &--testimonials{
-	// 	background: #e0e6ef;
-		
-	// 	// @include atMedium(){
-			
-	// 	// 	&.lazyloaded {
-	// 	// 		background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
-	// 	// 		background-size: cover;
-	// 	// 	}
-	// 	// }
-	// }
+  // 	// 	&.lazyloaded {
+  // 	// 		background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+  // 	// 		background-size: cover;
+  // 	// 	}
+  // 	// }
+  // }
 }

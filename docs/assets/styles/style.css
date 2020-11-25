@@ -767,7 +767,7 @@ a {
 }
 @media (min-width: 800px) {
   .page-section--b-margin-external {
-    margin-bottom: -140px;
+    margin-bottom: -155px;
   }
 }
 .page-section--tb-padding {
@@ -1008,7 +1008,7 @@ a {
 }
 @media (min-width: 1200px) {
   .video-container {
-    padding-bottom: 54.5%;
+    padding-bottom: 55.7%;
     margin-right: 0px;
     margin-left: 0px;
   }
