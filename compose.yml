@@ -4,12 +4,6 @@ version: "3.8"
 services:
   app:
     image: "decentral1se/biobulkbende.org:latest"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:5000"]
-      interval: 10s
-      timeout: 10s
-      retries: 10
-      start_period: 15s
     networks:
       - proxy
     deploy:
