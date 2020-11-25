@@ -5,7 +5,7 @@ services:
   app:
     image: "decentral1se/biobulkbende.org:latest"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8081"]
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
       interval: 10s
       timeout: 10s
       retries: 10
@@ -18,7 +18,7 @@ services:
         order: start-first
       labels:
         - "traefik.enable=true"
-        - "traefik.http.services.biobulkbende-org.loadbalancer.server.port=8081"
+        - "traefik.http.services.biobulkbende-org.loadbalancer.server.port=5000"
         - "traefik.http.routers.biobulkbende-org.rule=Host(`biobulkbende.org`)"
         - "traefik.http.routers.biobulkbende-org.entrypoints=web-secure"
         - "traefik.http.routers.biobulkbende-org.tls.certresolver=production"

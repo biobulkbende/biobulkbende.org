@@ -1,13 +1,11 @@
 FROM node:alpine
 
-EXPOSE 8081
+EXPOSE 5000
 
-COPY ./docs /app
+RUN npm i -g serve
+
+COPY . /app
 
 WORKDIR /app
 
-RUN apk add --no-cache curl
-
-RUN npm install http-server
-
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]
