@@ -16,6 +16,8 @@ steps:
     image: decentral1se/stack-ssh-deploy:latest
     settings:
       stack: biobulkbende_org
+      host: vps.biobulkbende.org
+      port: 12345
       deploy_key:
         from_secret: drone_ssh_vps_biobulbende_org
 trigger:
