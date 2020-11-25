@@ -1,74 +1,70 @@
-.row{
+.row {
+  @include clearfix();
 
-	@include clearfix();
+  &--large-only {
+    display: none;
 
-	&--large-only{
-		display: none;
+    @include atLarge {
+      display: inline-block;
+    }
+  }
 
-		@include atLarge{
-			display: inline-block;
-		}
-	}
+  &--gutters {
+    margin-right: -60px;
+    margin-bottom: 15px;
+  }
 
-	&--gutters {
-		margin-right: -60px;
-	}
+  &--gutters > div {
+    padding-right: 60px;
+  }
 
-	&--gutters > div {
-		padding-right: 60px;
-	}
+  @include atLarge() {
+    &__medium-3--larger {
+      float: left;
+      width: 30%;
+    }
 
-	@include atLarge(){
+    &__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
 
-		&__medium-3--larger {
-			float: left;
-			width: 30%;
-		}
+    &__medium-6 {
+      float: left;
+      width: 50%;
+    }
 
-		&__medium-4 {
-			float: left;
-			width: 33.33%;
-		}
+    &__medium-8 {
+      float: right;
+      width: 66.66%;
+    }
 
-		&__medium-6 {
-			float: left;
-			width: 50%;
-		}
+    &__medium-9--smaller {
+      float: right;
+      width: 70%;
+    }
+  }
 
-		&__medium-8 {
-			float: right;
-			width: 66.66%;
-		}
+  /* Begin Equal Height Rules */
+  .flexbox &--equal-height-at-medium {
+    @include atMedium() {
+      display: flex;
+    }
 
-		&__medium-9--smaller {
-			float: right;
-			width: 70%;
-		}
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
 
-	}
-	
-	/* Begin Equal Height Rules */
-	.flexbox &--equal-height-at-medium {
+  .flexbox &--equal-height-at-large {
+    @include atMedium() {
+      display: flex;
+    }
 
-		@include atMedium(){
-			display: flex;
-		}
-
-		& > div {
-			float: none;
-			display: flex;
-		}
-	}
-
-	.flexbox &--equal-height-at-large {
-
-		@include atMedium(){
-			display: flex;
-		}
-
-		& > div {
-			float: none;
-			display: flex;
-		}
-	}
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
 }

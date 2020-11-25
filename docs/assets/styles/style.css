@@ -355,14 +355,12 @@ template {
 
 @font-face {
   font-family: "CocogooseExtra";
-  src: url("../media/fonts/cocogoose/Cocogoose_extraBold.ttf")
-    format("truetype");
+  src: url("../media/fonts/cocogoose/Cocogoose_extraBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "BS-regular";
-  src: url("../media/fonts/bahnschrift/BS_Static_Regular.ttf")
-    format("truetype");
+  src: url("../media/fonts/bahnschrift/BS_Static_Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -911,6 +909,7 @@ a {
 }
 .row--gutters {
   margin-right: -60px;
+  margin-bottom: 15px;
 }
 .row--gutters > div {
   padding-right: 60px;
@@ -1009,7 +1008,7 @@ a {
 }
 @media (min-width: 1200px) {
   .video-container {
-    padding-bottom: 56.25%;
+    padding-bottom: 54.5%;
     margin-right: 0px;
     margin-left: 0px;
   }
@@ -1181,7 +1180,7 @@ a {
 @media (min-width: 1200px) {
   .arrow--about {
     position: relative;
-    bottom: -60px;
+    bottom: -55px;
     left: 50%;
     transform: translateX(-50%);
   }
