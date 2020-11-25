@@ -1,0 +1,23 @@
+---
+kind: pipeline
+name: deploy to vps.biobulkbende.org
+steps:
+  - name: build container
+    image: plugins/docker
+    settings:
+      username:
+        from_secret: docker_reg_username
+      password:
+        from_secret: docker_reg_passwd
+      repo: decentral1se/biobulkbende.org
+      tags: latest
+
+  - name: deployment
+    image: decentral1se/stack-ssh-deploy:latest
+    settings:
+      stack: biobulkbende_org
+      deploy_key:
+        from_secret: drone_ssh_swarm.autonomic.zone
+trigger:
+  branch:
+    - main
