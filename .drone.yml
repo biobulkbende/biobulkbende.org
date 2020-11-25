@@ -17,7 +17,7 @@ steps:
     settings:
       stack: biobulkbende_org
       deploy_key:
-        from_secret: drone_ssh_swarm.autonomic.zone
+        from_secret: drone_ssh_vps_biobulbende_org
 trigger:
   branch:
     - main
