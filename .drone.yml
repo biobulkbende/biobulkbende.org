@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-name: deploy to vps.biobulkbende.org
+name: deploy to biobulkbende.org
 steps:
   - name: build container
     image: plugins/docker
@@ -16,7 +16,7 @@ steps:
     image: decentral1se/stack-ssh-deploy:latest
     settings:
       stack: biobulkbende_org
-      host: vps.biobulkbende.org
+      host: biobulkbende.org
       port: 12345
       deploy_key:
         from_secret: drone_ssh_vps_biobulbende_org
