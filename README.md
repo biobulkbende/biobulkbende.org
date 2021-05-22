@@ -16,3 +16,5 @@ Our public website made by members!
 ## Deployment
 
 Just push commits and our [CD config](https://drone.autonomic.zone/biobulkbende/biobulkbende.org) will deploy the website.
+
+Once the [mirrored repository](https://git.autonomic.zone/biobulkbende/biobulkbende.org) synchronises, the deploy will run.
