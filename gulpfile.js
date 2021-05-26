@@ -39,7 +39,7 @@ function scriptsTask() {
         })
       )
       // .on('error', function (err) { if(err){ console.log(err.message);} })
-      .pipe(dest("./app/temp/scripts"))
+      .pipe(dest("./app/bundle/scripts")) // copy JS in bundle
       .pipe(browserSync.stream())
   );
 }
@@ -55,7 +55,7 @@ function scssTask() {
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemaps.write("."))
-    .pipe(dest("app/temp/styles"))
+    .pipe(dest("./app/bundle/styles")) // copy CSS in bundle
     .pipe(browserSync.stream());
 }
 
@@ -85,7 +85,7 @@ function createSprite() {
 
 function copySpriteGraphic() {
   return src("./app/temp/sprite/css/**/*.svg").pipe(
-    dest("./app/assets/media/images/sprites")
+    dest("./app/bundle/media/images/sprites") // copy sprites in bundle
   );
 }
 
@@ -138,7 +138,13 @@ function imagesTask() {
         multipass: true,
       })
     )
-    .pipe(dest("./docs/assets/media/images"));
+    .pipe(dest("./app/bundle/media/images"));
+}
+
+// FONT TASK
+function copyFonts() {
+  return src("./app/assets/media/fonts/**/*")
+    .pipe(dest("./app/bundle/media/fonts"));
 }
 
 exports.watch = watch;
@@ -150,3 +156,9 @@ exports.icons = series(
   endClean
 );
 exports.images = imagesTask;
+
+exports.copyMediaInBundle = series(
+  copySpriteGraphic,
+  copyFonts,
+  imagesTask
+);

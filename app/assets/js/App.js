@@ -7,5 +7,5 @@ import Modal from './modules/Modal';
 var mobileMenu = new MobileMenu();
 new RevealOnScroll($(".how-it-works-1"), "79%");
 new RevealOnScroll($(".how-it-works-2, .how-it-works-3"), "90%");
-var stickyHeader = new StickyHeader();
+var stickyHeader = new StickyHeader(); 
 var modal = new Modal();
