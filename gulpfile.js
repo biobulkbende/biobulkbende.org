@@ -148,6 +148,7 @@ function copyFonts() {
 }
 
 exports.watch = watch;
+exports.images = imagesTask;
 exports.icons = series(
   beginClean,
   createSprite,
@@ -155,7 +156,7 @@ exports.icons = series(
   copySpriteCSS,
   endClean
 );
-exports.images = imagesTask;
+
 
 exports.copyMediaInBundle = series(
   copySpriteGraphic,
