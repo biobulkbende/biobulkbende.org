@@ -46,9 +46,9 @@ The final file is stored in `/bundle/scripts` and provide the JS to `index.html`
 ### Media
 
 The media are stored in `/assets/media` containing:
-    * Icons
-    * Fonts
-    * Images
+- Icons
+- Fonts
+- Images
 
 Icons are compressed in a sprite through the command `gulp icons`. (This is complicated as it generates a single sprite with all the icons togheter and a CSS which points at the right icon in the sprite). After this command automation for the CSS must be runned.
 Images are minified through the command `gulp images`.
