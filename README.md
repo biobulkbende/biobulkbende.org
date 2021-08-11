@@ -1,10 +1,9 @@
 # biobulkbende.org
 
-[![Build Status](https://drone.autonomic.zone/api/badges/biobulkbende/biobulkbende.org/status.svg?ref=refs/heads/main)](https://drone.autonomic.zone/biobulkbende/biobulkbende.org)
-
 > https://biobulkbende.org
 
-Our public website made by members!
+Our public website made by members.
+
 ## Hacking
 
 - Make sure you have installed git, node.js and npm
@@ -21,6 +20,7 @@ The folder `/assets` is only for developement while the folde `/bundle` contains
 ### Html
 
 There are two pages:
+
 - `index.html` (Dutch)
 - `/en/index.html` (English)
 
@@ -29,6 +29,7 @@ Changes to the text can be done directly to these files without having to run an
 ### (S)CSS
 
 The CSS files to be changed are stored in /assets/scss which contains:
+
 - /base (global CSS declarations)
 - /modules (specific CSS declarations)
 
@@ -46,6 +47,7 @@ The final file is stored in `/bundle/scripts` and provide the JS to `index.html`
 ### Media
 
 The media are stored in `/assets/media` containing:
+
 - Icons
 - Fonts
 - Images
@@ -59,8 +61,3 @@ If you want to change an Image you have to put it in `/assets/media/images` and 
 ### Video
 
 The video is stored on vimeo.
-## Deployment
-
-Just push commits and our [CD config](https://drone.autonomic.zone/biobulkbende/biobulkbende.org) will deploy the website.
-
-Once the [mirrored repository](https://git.autonomic.zone/biobulkbende/biobulkbende.org) synchronises, the deploy will run.
