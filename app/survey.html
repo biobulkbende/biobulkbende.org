@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biobulkbende - Survey</title>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/tripetto-runner-foundation"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-runner-autoscroll"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-services"></script>
+<script>
+var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiN3ZzOEh0c2RudlZGdDBEYThqbVhWNXNUc1VQb0hkVGRlSkNYVDRMNFJjcz0iLCJkZWZpbml0aW9uIjoiVFVBQ1hmbFlFVldkTThyVTA2amVsWEZhWUtrek51MHFRdXlZcFBVN2FNZz0iLCJ0eXBlIjoiY29sbGVjdCJ9.i_-M5y-2EyS7585xtb0mpUHyMYTpoYpRIFK7yKvUszA" });
+
+TripettoAutoscroll.run({
+    element: document.body, /* Or supply your own element here */
+    definition: tripetto.definition,
+    styles: tripetto.styles,
+    l10n: tripetto.l10n,
+    locale: tripetto.locale,
+    translations: tripetto.translations,
+    attachments: tripetto.attachments,
+    onSubmit: tripetto.onSubmit
+});
+</script>
+    
+</body>
+</html>
