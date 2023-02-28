@@ -11,6 +11,14 @@ Our public website made by members.
 - From within the folder install all packages: `npm install`
 - Run gulp for automation: `gulp watch`
 
+## Deployment
+
+(You need to be a member of the systems workgroup to do this).
+
+```
+make
+```
+
 ## Structure
 
 The website is served from the folder `/app`. The folder `/assets` is only for
