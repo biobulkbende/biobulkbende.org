@@ -6,4 +6,5 @@ default:
 	sleep 5 && \
 	docker system prune -fa && \
 	sleep 3 && \
-	docker stack deploy -c compose.yml biobulkbende_org
+	docker stack deploy -c compose.yml biobulkbende_org && \
+	docker context use default
